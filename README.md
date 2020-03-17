@@ -14,8 +14,8 @@ See the [SchemaDetails](#SchemaDetails)section for information about the data co
 
 |Feed|URL|Schema|
 |:---|:---|:---|
-|Game Detail|https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2019/scores/gamedetail/`<gameid>`_gamedetail.json|[Schema](#GameDetail)|
-|Play By Play|https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2019/scores/pbp/`<gameid>`_`<period>`_pbp.json|[Schema](#PlayByPlay)|
+|Game Detail|https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2019/scores/gamedetail/[GAMEID]_gamedetail.json|[Schema](#GameDetail)|
+|Play By Play|https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2019/scores/pbp/[GAMEID]_[PERIOD]_pbp.json|[Schema](#PlayByPlay)|
 
 
 ## Instructions
