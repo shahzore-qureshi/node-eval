@@ -4,7 +4,7 @@ Follow the instructions below and complete the work to the best of your ability
 
 ## Set up
 
-- clone this repository: [Node Eval]()
+- clone this repository: [Node Eval](https://github.com/nortenzio/node-eval)
 - run `npm install`
 - Add [node-fetch](https://www.npmjs.com/package/node-fetch) as a dependency to the package. All JSON requests should be made using the `node-fetch` library.
 
