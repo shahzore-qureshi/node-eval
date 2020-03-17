@@ -10,7 +10,7 @@ Follow the instructions below and complete the work to the best of your ability
 
 ## Enpoints
 
-See the [SchemaDetails](#Schema Details)section for information about the data contained in these feeds
+See the [SchemaDetails](#SchemaDetails)section for information about the data contained in these feeds
 
 |Feed|URL|Schema|
 |:---|:---|:---|
