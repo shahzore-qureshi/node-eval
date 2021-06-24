@@ -4,9 +4,9 @@ Follow the instructions below and complete the work to the best of your ability.
 
 ## Set up
 
-- clone this repository: [Node Eval](https://github.com/shahzore-qureshi/node-eval)
-- run `npm install`
-- Add [axios](https://www.npmjs.com/package/axios) as a dependency to the package. All JSON requests should be made using the `axios` library.
+- Clone this repository: [Node Eval](https://github.com/shahzore-qureshi/node-eval)
+- Run `npm install`
+- Add [axios](https://www.npmjs.com/package/axios) or any HTTP network request library you prefer as a dependency to the package. All JSON requests should be made using this library.
 
 ## Endpoints
 
