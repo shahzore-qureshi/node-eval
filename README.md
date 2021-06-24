@@ -1,22 +1,34 @@
 # NODE EVAL
 
-Follow the instructions below and complete the work to the best of your ability
+Follow the instructions below and complete the work to the best of your ability.
 
 ## Set up
 
-- clone this repository: [Node Eval](https://github.com/nortenzio/node-eval)
+- clone this repository: [Node Eval](https://github.com/shahzore-qureshi/node-eval)
 - run `npm install`
-- Add [node-fetch](https://www.npmjs.com/package/node-fetch) as a dependency to the package. All JSON requests should be made using the `node-fetch` library.
+- Add [axios](https://www.npmjs.com/package/axios) as a dependency to the package. All JSON requests should be made using the `axios` library.
 
-## Enpoints
+## Endpoints
 
-See the [SchemaDetails](#SchemaDetails)section for information about the data contained in these feeds
+See the [Schema Details](#SchemaDetails) section for information about the data contained in these feeds
 
-|Feed|URL|Schema|
-|:---|:---|:---|
-|Game Detail|https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2019/scores/gamedetail/[GAMEID]_gamedetail.json|[Schema](#GameDetail)|
-|Play By Play|https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2019/scores/pbp/[GAMEID]_[PERIOD]_pbp.json|[Schema](#PlayByPlay)|
+| Feed         | URL                                                                                                       | Schema                |
+| :----------- | :-------------------------------------------------------------------------------------------------------- | :-------------------- |
+| Game Detail  | https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/scores/gamedetail/[GAMEID]_gamedetail.json | [Schema](#GameDetail) |
+| Play By Play | https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/scores/pbp/[GAMEID]_[PERIOD]_pbp.json      | [Schema](#PlayByPlay) |
 
+Examples:
+
+- https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/scores/gamedetail/0022000073_gamedetail.json
+- https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/scores/pbp/0022000073_1_pbp.json
+- https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/scores/pbp/0022000073_2_pbp.json
+- https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/scores/pbp/0022000073_3_pbp.json
+- https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/scores/pbp/0022000073_4_pbp.json
+
+## Game IDs
+
+- 0022000073
+- 0022000248 (Overtime - more than 4 periods)
 
 ## Instructions
 
@@ -25,7 +37,6 @@ See the [SchemaDetails](#SchemaDetails)section for information about the data co
 - Use the GameDetail response to determine how many periods were played in that game, For each period, fetch the corresponding play by play file
 - Once all PlayByPlay files have been received, group each of the events by `pid` (Player Id)
 - write out the resulting object to a file called `./player-events.json`;
-
 
 ## Schema Details
 
@@ -51,7 +62,7 @@ See the [SchemaDetails](#SchemaDetails)section for information about the data co
   -  **at** *{number}* - Attendance
   -  **dur** *{string}* - Game Duration
 
-  ### PlayByPlay
+### PlayByPlay
 
 - **g** *{object}* - Game
   -  **mid** *{number}* - Message ID
